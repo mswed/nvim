@@ -27,6 +27,20 @@ return {
             },
           },
         },
+        -- Add YAML language server
+        yamlls = {
+          settings = {
+            yaml = {
+              format = { enable = true },
+              validate = true,
+              completion = true,
+              schemaStore = {
+                enable = true,
+                url = "https://www.schemastore.org/api/json/catalog.json",
+              },
+            },
+          },
+        },
       },
     },
   },

@@ -12,6 +12,8 @@ return {
         json = { "prettierd", "prettier" },
         yaml = { "prettierd", "prettier" },
         markdown = { "prettierd", "prettier" },
+
+        python = { "ruff_format" },
       },
     },
   },
