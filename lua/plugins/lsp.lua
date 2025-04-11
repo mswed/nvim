@@ -31,12 +31,23 @@ return {
         yamlls = {
           settings = {
             yaml = {
-              format = { enable = true },
+              format = { enable = false }, -- Disable LSP formatting in favor of yamlfmt
               validate = true,
               completion = true,
               schemaStore = {
                 enable = true,
                 url = "https://www.schemastore.org/api/json/catalog.json",
+              },
+            },
+          },
+        },
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                extraPaths = { ".", "../templator", "../flow" },
+                useLibraryCodeForTypes = true,
+                typeCheckingMode = "basic",
               },
             },
           },
